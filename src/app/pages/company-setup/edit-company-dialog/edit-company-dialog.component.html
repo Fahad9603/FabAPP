@@ -1,0 +1,42 @@
+<mat-card> 
+  <mat-card-header>
+    <mat-card-title>Update Profile</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+
+
+    <form [formGroup]="editForm">
+      <div class="row m-t-20">
+        <div class="col-lg-6">
+          <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Company Code</mat-label>
+          <mat-form-field appearance="outline" class="w-100" color="primary">
+            <input  matInput formControlName="company_code">
+          </mat-form-field>
+
+          <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Company Name</mat-label>
+          <mat-form-field appearance="outline" class="w-100" color="primary">
+            <input matInput formControlName="Company_Name">
+          </mat-form-field>
+        </div>
+
+        <div class="col-lg-6">
+          <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Mobile Number</mat-label>
+          <mat-form-field appearance="outline" class="w-100" color="primary">
+            <input matInput  formControlName="Mobile_No">
+          </mat-form-field>
+
+          <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Address</mat-label>
+          <mat-form-field appearance="outline" class="w-100" color="primary">
+            <input matInput formControlName="addresss">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button mat-flat-button class="m-l-8" (click)="save()">Save</button>
+        <button mat-flat-button class="bg-error text-white" (click)="close()">Cancel</button>
+      </div>
+    </form>
+
+  </mat-card-content>
+</mat-card>

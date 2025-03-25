@@ -1,0 +1,49 @@
+<mat-card> 
+    <mat-card-header>
+      <mat-card-title>Update Profile</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+  
+  
+      <form [formGroup]="editForm">
+        <div class="row m-t-20">
+          <div class="col-lg-6">
+            <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Fabric ID</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input  matInput formControlName="FabricID">
+            </mat-form-field>
+  
+            <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Weight KG</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input matInput formControlName="WeightKG">
+            </mat-form-field>
+          </div>
+  
+          <div class="col-lg-6">
+            <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Fabric Type</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input matInput  formControlName="FabricType">
+            </mat-form-field>
+  
+            <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Color Status</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input matInput formControlName="ColorStatus">
+            </mat-form-field>
+          </div>
+          <div class="col-lg-6">
+            <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Process Stage</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input matInput  formControlName="ProcessStage">
+            </mat-form-field>
+          </div>
+        </div>
+  
+        <div class="button-row">
+          <button mat-flat-button class="m-l-8" (click)="save()">Save</button>
+          <button mat-flat-button class="bg-error text-white" (click)="close()">Cancel</button>
+        </div>
+      </form>
+  
+    </mat-card-content>
+  </mat-card>
+  

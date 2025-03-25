@@ -1,0 +1,30 @@
+.sidenav-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .content {
+    margin-top: 64px; /* Adjust based on toolbar height */
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
